@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="survey">
+        <header class="header">
+            <h1 id="title" class="header__title">freeCodeCamp Survey Form</h1>
+            <p id="description" class="header__desc">Thank you taking the time to help us improve the platform</p>
+        </header>
+
+        <div action="" id="survey-form" class="form">
+            <label for="name" id="name-label" class="form__label">Name</label>
+            <input type="text" id="name" class="form__input" placeholder="Enter your name" required>
+            <label for="email" class="form__label" id="email-label">Email</label>
+            <input type="email" class="form__input" id="email" placeholder="Enter your mail" required>
+            <label for="number" class="form__label" id="number-label">Age <span form__label-></span>(optional)</label>
+            <input type="number" class="form__input" id="number" placeholder="Age" min="16" max="100">
+
+            <label for="dropdown" class="form__label">Which option best describes your current role?</label>
+            <select name="role" id="dropdown" class="form__input form__select">
+                <option class="form__select-option" value="" default selected="selected" disabled>Select currrent role
+                </option>
+                <option class="form__select-option" value="1">Student</option>
+                <option class="form__select-option" value="2">Full Time Job</option>
+                <option class="form__select-option" value="3">Full Time Learner</option>
+                <option class="form__select-option" value="4">Prefer not to say</option>
+                <option class="form__select-option" value="5">Other</option>
+            </select>
+
+            <label class="form__label" for="recommendation1">Would you recommend freeCodeCamp to a friend?</label>
+
+            <div class="input-container">
+                <input class="form__input form__radio" type="radio" name="recommendation" id="recommendation1">
+                <label for="" class="form__label">Definitely</label>
+            </div>
+            <div class="input-container">
+                <input class="form__input form__radio" type="radio" name="recommendation" id="recommendation2">
+                <label for="" class="form__label">Maybe</label>
+            </div>
+
+            <div class="input-container">
+                <input class="form__input form__radio" type="radio" name="recommendation" id="recommendation3">
+                <label for="" class="form__label">Not sure</label>
+            </div>
+
+            <label class="form__label" for="favorite_feature">What is your favotite feature of freeCodeCamp?</label>
+            <select class="form__select" name="favorite_feature" id="favorite_feature">
+                <option class="form__select-option" value="" default selected="selected" disabled>Select currrent role
+                </option>
+                <option class="form__select-option" value="1">Challenges</option>
+                <option class="form__select-option" value="2">Projects</option>
+                <option class="form__select-option" value="3">Community</option>
+                <option class="form__select-option" value="4">Open Source</option>
+            </select>
+
+            <label class="form__label" for="improvements1">What would you like to see improved? (Check all that
+                apply)</label>
+            <div class="input-container">
+                <input class="form__input form__checkbox" type="checkbox" value="1" id="improvements1">
+                <label class="form__label" for="improvements1">Front-end Projects</label>
+            </div>
+            <div class="input-container">
+                <input class="form__input form__checkbox" type="checkbox" value="2" id="improvements2">
+                <label class="form__label" for="improvements2">Back-end Projects</label>
+            </div>
+            <div class="input-container">
+                <input class="form__input form__checkbox" type="checkbox" value="3" id="improvements3">
+                <label class="form__label" for="improvements3">Data Visualization</label>
+            </div>
+
+            <label class="form__label" for="suggestions">Any comments or suggestions?</label>
+            <textarea class="form__textarea" name="suggestions" id="suggestions" cols="10" rows="4"
+                placeholder="Enter your comment here..."></textarea>
+            <button class="form__button" type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+</body>
+
+</html>
