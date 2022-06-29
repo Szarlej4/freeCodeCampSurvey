@@ -16,7 +16,7 @@
             <p id="description" class="header__desc">Thank you taking the time to help us improve the platform</p>
         </header>
 
-        <div action="" id="survey-form" class="form">
+        <form action="" id="survey-form" class="form">
             <label for="name" id="name-label" class="form__label">Name</label>
             <input type="text" id="name" class="form__input" placeholder="Enter your name" required>
             <label for="email" class="form__label" id="email-label">Email</label>
@@ -38,16 +38,19 @@
             <label class="form__label" for="recommendation1">Would you recommend freeCodeCamp to a friend?</label>
 
             <div class="input-container">
-                <input class="form__input form__radio" type="radio" name="recommendation" id="recommendation1">
+                <input class="form__input form__radio" type="radio" name="recommendation" value="1"
+                    id="recommendation1">
                 <label for="" class="form__label">Definitely</label>
             </div>
             <div class="input-container">
-                <input class="form__input form__radio" type="radio" name="recommendation" id="recommendation2">
+                <input class="form__input form__radio" type="radio" name="recommendation" value="2"
+                    id="recommendation2">
                 <label for="" class="form__label">Maybe</label>
             </div>
 
             <div class="input-container">
-                <input class="form__input form__radio" type="radio" name="recommendation" id="recommendation3">
+                <input class="form__input form__radio" type="radio" name="recommendation" value="3"
+                    id="recommendation3">
                 <label for="" class="form__label">Not sure</label>
             </div>
 
@@ -80,8 +83,7 @@
             <textarea class="form__textarea" name="suggestions" id="suggestions" cols="10" rows="4"
                 placeholder="Enter your comment here..."></textarea>
             <button class="form__button" type="submit" id="submit">Submit</button>
-            </form>
-        </div>
+        </form>
 </body>
 
 </html>
